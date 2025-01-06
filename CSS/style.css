@@ -1,0 +1,217 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  background-color: var(--yellow-color);
+  color: var(--red-color);
+  transition: 0.3s;
+}
+
+.main-title h2 {
+  color: var(--dark-color);
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--green-color);
+}
+
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+  color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+  color: #fff;
+  font-size: 25px;
+  border-color: #fff;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar .navbar-toggler:not(.collapsed) {
+  border-color: var(--green-color);
+}
+
+.landing {
+  background-color: var(--dark-color);
+  min-height: 100vh;
+}
+
+.feature .icon-container {
+  height: 200px;
+}
+
+.feature .icon-container svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feature .icon-container .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.feature .icon-container .icon {
+  color: var(--green-color);
+}
+.feature h4 {
+  color: var(--yellow-color);
+}
+
+.products {
+  background-color: var(--section-color);
+}
+
+.products .nav .nav-link {
+  color: var(--dark-color);
+}
+
+.products .nav .nav-link.active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.products .nav .nav-link:not(.active):hover {
+  color: var(--red-color);
+}
+
+.products .nav .nav-link:focus-visible {
+  box-shadow: none;
+}
+
+.products .product {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.products .product::before {
+  content: attr(data-title);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: calc(100% - 0.5rem);
+  height: calc(100% - 0.5rem);
+  background-color: rgb(51, 209, 204, 0.7);
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 0.5rem));
+}
+
+.products .product:hover::before {
+  transform: translateX(0);
+}
+
+.stuff .description {
+  max-width: 500px;
+}
+
+.team {
+  background-color: var(--section-color);
+}
+
+.team .title {
+  color: var(--yellow-color);
+}
+
+.team .box h4 {
+  background-color: var(--green-color);
+}
+
+.projects {
+  background-color: var(--dark-color);
+}
+
+.subscribe {
+  background-color: var(--yellow-color);
+}
+
+.subscribe .text {
+  color: var(--dark-color);
+}
+
+.subscribe input[type="email"] {
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.subscribe input[type="email"]:focus {
+  outline: none;
+}
+
+.subscribe input[type="email"]::placeholder {
+  color: #fff;
+}
+
+.subscribe .btn {
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
+}
+
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer .info .copyright p:first-child span {
+  color: var(--green-color);
+}
+
+.footer .info .copyright p:nth-child(2) span {
+  color: var(--yellow-color);
+}
+
+.footer .social svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .social .facebook {
+  background-color: #1877f2;
+}
+.footer .social .twitter {
+  background-color: #1da1f2;
+}
+.footer .social .linkedin {
+  background-color: #0077b5;
+}
+.footer .social .youtube {
+  background-color: #ff0000;
+}
